@@ -1,0 +1,100 @@
+.graphics {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphics-stats {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 5px;
+
+    .stat-fx {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        margin-right: 20px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .orders-info {
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+    }
+
+    .orders-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #556ee6;
+        position: relative;
+
+        i {
+            font-size: 20px;
+            color: #fff;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+
+        .xazi {
+            position: absolute;
+            width: 8px;
+            height: 54px;
+            background-color: rgba(255, 255, 255, .1);
+            left: 16px;
+            transform: rotate(32deg);
+            top: -5px;
+        }
+
+    }
+
+    .orders-icon:hover {
+        background-color: rgb(197, 15, 15);
+
+        i {
+            color: #7384da;
+        }
+    }
+
+}
+
+
+.graphics-emails {
+    padding: 20px;
+
+    .emails-sent {
+        display: flex;
+        justify-content: space-between;
+        height: 35px;
+
+        h4 {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+        li {
+            display: inline-block;
+
+            a {
+                padding: 8px 16px;
+            }
+
+            .active {
+                color: #fff;
+                background-color: #556ee6;
+                border-radius: 5px;
+            }
+        }
+    }
+}
