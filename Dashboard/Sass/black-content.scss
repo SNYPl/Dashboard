@@ -27,7 +27,8 @@
 
 .black-content {
   overflow: scroll;
-
+  border: 1px solid #515e75;
+  border-right: 0;
 
   a {
     color: #a6b0cf;
@@ -75,16 +76,17 @@
     padding: 6px 24px;
     width: 100%;
     transition: all 1s linear;
+    padding-right: 18px;
 
     a {
       font-size: 13px;
       width: 100%;
       color: #a6b0cf;
       display: grid;
-      grid-template-columns: 30px 3fr 3fr;
+      grid-template-columns: 30px 3fr 30px;
       text-align: left;
       margin-bottom: 14px;
-      cursor: poinetr;
+      cursor: pointer;
 
       &:hover {
         color: #fff;
@@ -122,4 +124,42 @@
       }
     }
   }
+}
+
+.black-content ul .second-text {
+  padding-right: 14px;
+}
+
+.new-toggle {
+  position: relative;
+}
+
+.menu-number {
+  text-align: right;
+  background-color: #50a5f1;
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  width: 24px;
+  text-align: center;
+  font-size: 10px;
+  top: 2px;
+
+}
+
+.second-toggle-number {
+  background-color: #f46a6a;
+  color: #fff;
+}
+
+.new-toggler-number {
+  background-color: #34c38f;
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  top: 2px;
+  font-size: 11px;
+  color: #fff;
+  width: 34px;
+  text-align: center;
 }

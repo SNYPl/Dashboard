@@ -1,3 +1,5 @@
+$base-color:#fff;
+
 body,
 html {
   width: 100%;
@@ -83,13 +85,25 @@ p {
   padding: 25px 20px;
   overflow: scroll;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 33% 65.5%;
   grid-template-rows: 50px;
-  grid-gap: 6px;
+  grid-gap: 8px;
+  column-gap: 18px;
 }
 
 
 .title-box {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+
+.footer {
+  padding: 20px 12px;
+  color: #74788d;
+  background-color: #f2f2f5;
+  display: flex;
+  justify-content: space-between;
   grid-column-start: 1;
   grid-column-end: 3;
 }

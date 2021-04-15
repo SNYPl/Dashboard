@@ -56,11 +56,13 @@
         <ul class="list-menu">
           <li class="menu-title">MENU</li>
           <li class="main-text-menu first-menu">
-            <a href="#" id="first-link" class="colorChange active">
-              <i class="fas fa-home"></i>Dashboards<i
+            <a href="#" id="first-link" class="colorChange active new-toggle">
+              <i class="fas fa-home"></i>Dashboards
+              <!-- <i
                 class="fas fa-angle-down"
-              ></i
-            ></a>
+              ></i> -->
+              <span class="menu-number">04</span></a
+            >
             <ul id="click-menu">
               <li><a href="#">Default</a></li>
               <li><a href="#">Saas</a></li>
@@ -91,9 +93,10 @@
             >
           </li>
           <li class="second-text">
-            <a href="#" class="colorChange"
-              ><i class="fas fa-file-alt"></i>File Manager</a
-            >
+            <a href="#" class="colorChange new-toggle"
+              ><i class="fas fa-file-alt"></i>File Manager
+              <span class="new-toggler-number">New</span>
+            </a>
           </li>
           <li class="main-text-menu">
             <a href="#" id="first-link" class="colorChange"
@@ -175,15 +178,17 @@
             </ul>
           </li>
           <li class="second-text">
-            <a href="#" class="colorChange"
-              ><i class="fas fa-calendar-day"></i>Blog</a
-            >
+            <a href="#" class="colorChange new-toggle"
+              ><i class="fas fa-calendar-day"></i>Blog
+              <span class="new-toggler-number">New</span>
+            </a>
           </li>
           <li class="menu-title">Pages</li>
           <li class="second-text">
-            <a href="#" class="colorChange"
-              ><i class="fas fa-user"></i>Authentication</a
-            >
+            <a href="#" class="colorChange new-toggle"
+              ><i class="fas fa-user"></i>Authentication
+              <span class="new-toggler-number">New</span>
+            </a>
           </li>
           <li class="second-text">
             <a href="#" class="colorChange"
@@ -204,11 +209,10 @@
             </ul>
           </li>
           <li class="main-text-menu">
-            <a href="#" id="first-link" class="colorChange"
-              ><i class="fas fa-eraser"></i>Forms<i
-                class="fas fa-angle-down"
-              ></i
-            ></a>
+            <a href="#" id="first-link" class="colorChange new-toggle"
+              ><i class="fas fa-eraser"></i>Forms
+              <span class="menu-number second-toggle-number">10</span>
+            </a>
             <ul id="click-menu">
               <li><a href="#">Form Elements</a></li>
               <li><a href="#">Form Layouts</a></li>
@@ -385,38 +389,143 @@
         </section>
 
         <section class="social-activity">
-          <h4>Social Source</h4>
-          <div class="social-main-fb">
-            <i class="fab fa-facebook"></i>
-            <a href="#" class="lnk-fb"
-              >Facebook - <span class="lnk-text">125 sales</span></a
-            >
-            <p>
-              Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut
-              libero venenatis faucibus tincidunt.
-            </p>
-            <a href="#" class="lnk-more">Learn More ></a>
+          <div class="social-activity-wraper">
+            <h4>Social Source</h4>
+            <div class="social-main-fb">
+              <i class="fab fa-facebook"></i>
+              <a href="#" class="lnk-fb"
+                >Facebook - <span class="lnk-text">125 sales</span></a
+              >
+              <p>
+                Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien
+                ut libero venenatis faucibus tincidunt.
+              </p>
+              <a href="#" class="lnk-more">Learn More ></a>
+            </div>
+            <article class="socials">
+              <div class="social social-fb">
+                <span>
+                  <i class="fab fa-facebook"></i>
+                </span>
+                <h5>Facebook</h5>
+                <p>125 sales</p>
+              </div>
+              <div class="social social-twt">
+                <span><i class="fab fa-twitter"></i></span>
+                <h5>Twitter</h5>
+                <p>112 sales</p>
+              </div>
+              <div class="social social-inst">
+                <span><i class="fab fa-instagram"></i></span>
+                <h5>Instagram</h5>
+                <p>104 sales</p>
+              </div>
+            </article>
           </div>
-          <article class="socials">
-            <div class="social social-fb">
-              <span>
-                <i class="fab fa-facebook"></i>
-              </span>
-              <h5>Facebook</h5>
-              <p>125 sales</p>
+        </section>
+
+        <secion class="activity-info">
+          <article class="activity-calendar">
+            <h4>Activity</h4>
+            <div class="activity-calendar-dates">
+              <i class="far fa-arrow-alt-circle-right"></i>
+              <h5>22 Nov <i class="fas fa-arrow-right"></i></h5>
+              <p>Responded to need “Volunteer Activities</p>
             </div>
-            <div class="social social-twt">
-              <span><i class="fab fa-twitter"></i></span>
-              <h5>Twitter</h5>
-              <p>112 sales</p>
+
+            <div class="activity-calendar-dates">
+              <i class="far fa-arrow-alt-circle-right"></i>
+              <h5>17 Nov <i class="fas fa-arrow-right"></i></h5>
+              <p>
+                Everyone realizes why a new common language would be
+                desirable... <a href="#">Read More</a>
+              </p>
             </div>
-            <div class="social social-inst">
-              <span><i class="fab fa-instagram"></i></span>
-              <h5>Instagram</h5>
-              <p>104 sales</p>
+
+            <div class="activity-calendar-dates">
+              <i class="fas fa-arrow-circle-right anim-arr"></i>
+              <h5>15 Nov <i class="fas fa-arrow-right"></i></h5>
+              <p>Joined the group “Boardsmanship Forum”</p>
+            </div>
+
+            <div class="activity-calendar-dates dates-last">
+              <i class="far fa-arrow-alt-circle-right"></i>
+              <h5>12 Nov <i class="fas fa-arrow-right"></i></h5>
+              <p>Responded to need “In-Kind Opportunity”</p>
+            </div>
+            <button class="view">
+              View More <i class="fas fa-arrow-right"></i>
+            </button>
+          </article>
+          <article class="activity-stats">
+            <h4>Top Cities Selling Product</h4>
+            <div class="activity-stats_mark">
+              <i class="fas fa-map-marked"></i>
+              <h3>1,456</h3>
+              <p>San Francisco</p>
+            </div>
+            <div class="activity-stats_citys">
+              <table>
+                <tr>
+                  <td class="city-firstline">San Francisco</td>
+                  <td class="city-secondline"><h5>1,456</h5></td>
+                  <td class="city-thirdline">
+                    <div class="san-francisco"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="city-firstline">Los Angeles</td>
+                  <td class="city-secondline"><h5>1,123</h5></td>
+                  <td class="city-thirdline">
+                    <div class="los-angeles"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="city-firstline">San Diego</td>
+                  <td class="city-secondline"><h5>1,026</h5></td>
+                  <td class="city-thirdline">
+                    <div class="san-diego"></div>
+                  </td>
+                </tr>
+              </table>
             </div>
           </article>
+        </secion>
+
+        <section class="transactions">
+          <h4>Latest Transaction</h4>
+          <article class="transctions-list">
+            <div class="list-header">
+              <div class="list-checkbox">
+                <input type="checkbox" />
+              </div>
+              <div>Order ID</div>
+              <div>Billing Name</div>
+              <div>Date</div>
+              <div>Total</div>
+              <div>Payment Status</div>
+              <div>Patment Method</div>
+              <div>View Details</div>
+            </div>
+
+            <!-- <div class="transaction-list_item">
+              <div class="list-checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="list-id">Order Id</div>
+              <div class="list-billing">Billing Name</div>
+              <div class="list-date">Date</div>
+              <div class="list-total">Total</div>
+              <div class="list-status">Payment Status</div>
+              <div class="list-method">Patment Method</div>
+              <button class="list-button">View Details</button>
+            </div> -->
+          </article>
         </section>
+        <footer class="footer">
+          <div class="year">2021 ©</div>
+          <div class="developed">Develop by Snypi</div>
+        </footer>
       </div>
     </main>
 

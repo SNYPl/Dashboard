@@ -1,5 +1,5 @@
 .graphics {
-    padding: 10px;
+    // padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -9,15 +9,15 @@
     flex-direction: row;
     width: 100%;
     margin-bottom: 40px;
-    padding: 5px;
+    justify-content: space-between;
 
     .stat-fx {
         display: flex;
         width: 30%;
         justify-content: space-between;
-        margin-right: 20px;
         padding: 10px;
         overflow: hidden;
+        background-color: $base-color;
     }
 
     .orders-info {
@@ -71,6 +71,7 @@
 
 .graphics-emails {
     padding: 20px;
+    background-color: $base-color;
 
     .emails-sent {
         display: flex;

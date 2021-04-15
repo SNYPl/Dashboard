@@ -1,6 +1,7 @@
 .social-activity {
-    margin-top: 30px;
     padding: 20px;
+    background-color: $base-color;
+    height: calc(100% - 20px);
 
     h4 {
         color: #495057;
@@ -15,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
     i {
         color: #556ee6;
@@ -50,7 +51,7 @@
     justify-content: space-between;
 
     .social {
-        padding: 0 12px;
+        // padding: 0 12px;
         text-align: center;
         width: 30%;
         display: flex;
@@ -61,7 +62,7 @@
         h5 {
             font-size: 15px;
             font-weight: bold;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
 
         }
 
