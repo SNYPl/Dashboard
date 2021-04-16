@@ -1,0 +1,205 @@
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 20px;
+
+    h4 {
+        margin: 0;
+        color: #495057;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+
+    }
+
+    .dash {
+        display: inline;
+
+        p {
+            display: inline;
+
+        }
+    }
+}
+
+
+.earnings {
+    display: flex;
+    flex-direction: column;
+    // width: 34%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.welcome-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(85, 110, 230, .25);
+    border-radius: 5px;
+
+    .welcome-text {
+        padding: 14px;
+        color: #556ee6;
+        padding-right: 0;
+
+        h5 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+
+.welcome-info {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+    background-color: $base-color;
+    padding: 0 20px 20px 20px;
+
+    img {
+        position: absolute;
+        top: 75px;
+        left: 20px;
+        border-radius: 50%;
+        border: 5px solid #fff;
+    }
+}
+
+.welcome-avatar {
+    margin-right: 10px;
+    width: 40%;
+
+    h5 {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+
+}
+
+.welcome-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 24px;
+
+    .projects {
+        width: 50%;
+    }
+
+    .revenue {
+        width: 50%;
+    }
+
+    h5 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+
+
+    i {
+        font-size: 8px;
+    }
+}
+
+.view {
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    background-color: #556ee6;
+    border-color: #556ee6;
+    padding: 6px 12px;
+    font-size: 11px;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-color: #556ee6;
+}
+
+.view:hover {
+    background-color: #1b3bdd;
+}
+
+.monthly-earnings {
+    background-color: $base-color;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .earnings-graphics {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+
+        .earnings-month {
+            .month {
+                margin-bottom: 16px;
+            }
+
+            h3 {
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+
+            .period {
+                margin-bottom: 16px;
+
+                span {
+                    color: #34c38f;
+                    margin-right: 8px;
+
+                    i {
+                        font-size: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        width: 45%;
+        padding: 2px;
+    }
+
+    .craft-text {
+        margin-top: 15px;
+        font-weight: 400;
+
+    }
+}

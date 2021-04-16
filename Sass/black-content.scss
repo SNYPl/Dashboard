@@ -1,0 +1,165 @@
+.black-content::-webkit-scrollbar {
+  width: 5px;
+  padding: 0;
+  display: none;
+
+}
+
+.black-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #2a3042;
+  border-radius: 10px;
+}
+
+.black-content::-webkit-scrollbar-thumb {
+  background-color: #a6b0cf;
+  outline: 1px solid #a6b0cf;
+  border-radius: 10px;
+}
+
+.black-content::-webkit-scrollbar-thumb:hover {
+  background: #707275;
+}
+
+.black-content:hover::-webkit-scrollbar {
+  display: block;
+
+}
+
+.black-content {
+  overflow: scroll;
+  border: 1px solid #515e75;
+  border-right: 0;
+
+  a {
+    color: #a6b0cf;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .list-menu {
+    padding: 0;
+    margin: 0;
+    padding: 10px 0 30px 0;
+  }
+}
+
+.menu-title {
+  color: #79829c;
+  padding: 14px 20px;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.click-menus {
+  display: block !important;
+  transition: all 1s linear;
+}
+
+.black-content {
+  .second-text a {
+    grid-template-columns: 1fr 7fr 1fr !important;
+  }
+
+  .second-text,
+  .main-text-menu {
+    padding: 6px 24px;
+    width: 100%;
+    transition: all 1s linear;
+    padding-right: 18px;
+
+    a {
+      font-size: 13px;
+      width: 100%;
+      color: #a6b0cf;
+      display: grid;
+      grid-template-columns: 30px 3fr 30px;
+      text-align: left;
+      margin-bottom: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        transition: all 0.3s linear;
+      }
+
+      i:first-child {
+        text-align: left;
+        margin-right: 12px;
+        color: #6a7187;
+        font-size: 19px;
+      }
+    }
+
+    i {
+      font-size: 14px;
+      text-align: right;
+      color: #6a7187;
+    }
+
+    ul {
+      padding: 0;
+      width: 100%;
+      display: none;
+
+      li {
+        width: 100%;
+      }
+
+      a {
+        padding: 4px 24px 8px 32px;
+        margin: 0;
+        color: #79829c;
+        display: block;
+      }
+    }
+  }
+}
+
+.black-content ul .second-text {
+  padding-right: 14px;
+}
+
+.new-toggle {
+  position: relative;
+}
+
+.menu-number {
+  text-align: right;
+  background-color: #50a5f1;
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  width: 24px;
+  text-align: center;
+  font-size: 10px;
+  top: 2px;
+
+}
+
+.second-toggle-number {
+  background-color: #f46a6a;
+  color: #fff;
+}
+
+.new-toggler-number {
+  background-color: #34c38f;
+  position: absolute;
+  right: 0;
+  border-radius: 7px;
+  top: 2px;
+  font-size: 11px;
+  color: #fff;
+  width: 34px;
+  text-align: center;
+}
