@@ -14,8 +14,8 @@
     />
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body>
-    <main class="main-items">
+  <body class="scroll-hidden">
+    <main class="main-items menu-change_big">
       <div class="black-navigation">
         <span class="helper"><img src="img/logo-light.png" /></span>
       </div>
@@ -53,7 +53,7 @@
       </div>
 
       <div class="black-content toggler-padding">
-        <!-- <ul class="list-menu">
+        <ul class="list-menu">
           <li class="menu-title">MENU</li>
           <li class="main-text-menu first-menu">
             <a href="#" id="first-link" class="colorChange active new-toggle">
@@ -272,22 +272,276 @@
               <li><a href="#">Level 1.2</a></li>
             </ul>
           </li>
-        </ul> -->
+        </ul>
 
-        <ul class="list-menu-toggler">
+        <ul class="list-menu-toggler delete-item">
           <li class="menu-toggler-logo">
-            <i class="fas fa-home"></i>
+            <i class="fas fa-home active"></i>
             <ul class="toggle-menu-hover">
-              <li class="active">Dashboards</li>
-              <li><a href="#">Default</a></li>
-              <li><a href="#">Saas</a></li>
-              <li><a href="#">Crypto</a></li>
-              <li><a href="#">Blog</a></li>
+              <li class="current-hover">Dashboards</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#" class="active">Default</a></li>
+                <li><a href="#">Saas</a></li>
+                <li><a href="#">Crypto</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-layer-group"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Layout</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Vertical</a></li>
+                <li><a href="#">Horizontal</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="far fa-calendar-alt"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Calendar</li>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="far fa-comment-alt"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Chat</li>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-file-alt"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">File Manager</li>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-warehouse"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Ecommerce</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Product Detail</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fab fa-btc"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Crypto</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Buy/Sell</a></li>
+                <li><a href="#">Exchange</a></li>
+                <li><a href="#">Lending</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">KYC Application</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="far fa-envelope"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Email</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Read Email</a></li>
+                <li><a href="#">Templates</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-file-invoice"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Invoices</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Invoice List</a></li>
+                <li><a href="#">Invoice Detail</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-briefcase"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Projects</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Projects Grid</a></li>
+                <li><a href="#">Projects List</a></li>
+                <li><a href="#">Project Overview</a></li>
+                <li><a href="#">Create New</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="far fa-clipboard"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Tasks</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Task List</a></li>
+                <li><a href="#">Kanban Board</a></li>
+                <li><a href="#">Create Task</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="far fa-address-card"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Contacts</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">User Grid</a></li>
+                <li><a href="#">User List</a></li>
+                <li><a href="#">Profile</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-calendar-day"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Blog</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Blog List</a></li>
+                <li><a href="#">Blog Grid</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-user"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Authentication</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Recover Password</a></li>
+                <li><a href="#">Lock Screen</a></li>
+                <li><a href="#">Confirm Email</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-file-contract"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Utility</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Starter Page</a></li>
+                <li><a href="#">Maintenance</a></li>
+                <li><a href="#">Coming Soon</a></li>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-globe-europe"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">UI Element</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Alerts </a></li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Carousel</a></li>
+                <li><a href="#">Dropdowns</a></li>
+                <li><a href="#">Grid</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Lightbox</a></li>
+                <li><a href="#">Modals</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-eraser"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Forms</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Form Elements</a></li>
+                <li><a href="#">Form Layout</a></li>
+                <li><a href="#">Form Validation</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-list"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Tables</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Basic Tables </a></li>
+                <li><a href="#">Data Tables </a></li>
+                <li><a href="#">Responsive Table </a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-chart-pie"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Charts</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Apex Charts </a></li>
+                <li><a href="#">E Charts </a></li>
+                <li><a href="#">Flot Charts </a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-toolbox"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Icons</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Boxicons </a></li>
+                <li><a href="#">Material Design </a></li>
+                <li><a href="#">Dripicons </a></li>
+                <li><a href="#">Font Awesome </a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-map-marker-alt"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Maps</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Google Maps </a></li>
+                <li><a href="#">Vector Maps </a></li>
+                <li><a href="#">Leaflet Maps </a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="menu-toggler-logo">
+            <i class="fas fa-share-alt"></i>
+            <ul class="toggle-menu-hover">
+              <li class="current-hover">Multi Level</li>
+              <ul class="toggle-side-menu">
+                <li><a href="#">Level 1.1 </a></li>
+                <li><a href="#">Level 1.2 </a></li>
+              </ul>
             </ul>
           </li>
         </ul>
       </div>
-      <div class="white-content">
+      <div class="white-content scroll-auto">
         <div class="title-box">
           <h4>DASHBOARD</h4>
           <div class="dash">

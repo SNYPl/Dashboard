@@ -19,6 +19,7 @@
       background-color: #fff;
       cursor: pointer;
       margin-top: 8px;
+      outline: none;
     }
 
     i {
@@ -45,8 +46,6 @@
     .search {
       display: block;
       width: 100%;
-      //   height: calc(1.5em + 0.94rem + 2px);
-      //   padding: 0.47rem 0.75rem;
       font-size: 0.8125rem;
       font-weight: 400;
       line-height: 1.5;

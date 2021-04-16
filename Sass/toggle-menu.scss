@@ -1,21 +1,42 @@
-main .black-content .toggler-padding {
+main .toggler-padding {
   padding: 10px 0 30px 0;
+}
+
+.toggle-menu-hover .current-hover {
+  color: #fff;
+  padding: 15px 20px 15px 6px;
+  background-color: #2e3548;
+}
+
+.toggle-side-menu {
+  padding: 0;
+  margin: 0;
+  // border-top: 1px solid #515e75;
+  border-left: 1px solid #515e75;
+  padding-top: 4px;
+
+  li:hover {
+
+    a {
+      color: #fff;
+    }
+  }
 }
 
 .toggle-menu-hover {
   position: absolute;
-  //   display: none;
-  //   background-color: #2a3042;
-  background-color: red;
+  display: none;
+  background-color: #2a3042;
   margin: 0;
-  padding: 4px;
-  left: 75px;
+  padding: 0;
+  left: 79px;
   top: 0;
   z-index: 100;
 
   li {
     padding: 8px 20px;
     width: 190px;
+    text-align: left;
   }
 }
 
@@ -24,6 +45,12 @@ main .black-content .toggler-padding {
   padding: 0;
   margin: 0;
 
+  a {
+    color: #79829c;
+  }
+
+
+
   .menu-toggler-logo {
     width: 100%;
     padding: 15px 20px;
@@ -31,16 +58,26 @@ main .black-content .toggler-padding {
     cursor: pointer;
 
     position: relative;
+
     i {
-      color: #fff;
+      color: #6a7187;
       font-size: 21px;
     }
+
+
   }
 }
 
-.menu-toggler-logo :hover {
+.menu-toggler-logo:hover {
+  background-color: #2e3548;
+  color: #fff;
+
   .toggle-menu-hover {
     display: block;
     z-index: 100;
+  }
+
+  i {
+    color: #fff;
   }
 }

@@ -4,6 +4,8 @@ let mainText = document.querySelectorAll(".main-text-menu");
 
 let transactionList = document.querySelector(".transactions");
 
+let menuToggler = document.querySelector(".wnavigation-scroll");
+
 let showMenu = function () {
   for (let i = 0; i < mainText.length; i++) {
     mainText[i].addEventListener("click", function (event) {
@@ -100,3 +102,15 @@ let list = data.map((item) => {
 }).join("");
 
 transactionList.insertAdjacentHTML("beforeend", list);
+
+
+
+menuToggler.addEventListener("click", menuToggle);
+
+let mainContent = document.querySelector(".main-items");
+
+function menuToggle() {
+  mainContent.classList.toggle("menu-change_big");
+  mainContent.classList.toggle("menu-change_small");
+  console.log("click");
+}

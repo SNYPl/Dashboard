@@ -24,9 +24,12 @@
 }
 
 .black-content {
-  // overflow: scroll;
+  // overflow: none;
+  overflow-y: scroll;
+  // overflow-x: hidden;
   border: 1px solid #515e75;
   border-right: 0;
+  z-index: 1;
 
   a {
     color: #a6b0cf;
