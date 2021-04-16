@@ -1,0 +1,46 @@
+main .black-content .toggler-padding {
+  padding: 10px 0 30px 0;
+}
+
+.toggle-menu-hover {
+  position: absolute;
+  //   display: none;
+  //   background-color: #2a3042;
+  background-color: red;
+  margin: 0;
+  padding: 4px;
+  left: 75px;
+  top: 0;
+  z-index: 100;
+
+  li {
+    padding: 8px 20px;
+    width: 190px;
+  }
+}
+
+.list-menu-toggler {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .menu-toggler-logo {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    cursor: pointer;
+
+    position: relative;
+    i {
+      color: #fff;
+      font-size: 21px;
+    }
+  }
+}
+
+.menu-toggler-logo :hover {
+  .toggle-menu-hover {
+    display: block;
+    z-index: 100;
+  }
+}

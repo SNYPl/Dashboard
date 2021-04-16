@@ -1,4 +1,4 @@
-$base-color:#fff;
+$base-color: #fff;
 
 body,
 html {
@@ -27,8 +27,6 @@ a {
   color: #495057;
 }
 
-
-
 h5,
 p,
 h1,
@@ -41,7 +39,6 @@ li,
 i {
   margin: 0;
   font-weight: 500;
-
 }
 
 p {
@@ -50,7 +47,8 @@ p {
 
 .main-items {
   display: grid;
-  grid-template-columns: 1.1fr 5fr;
+  grid-template-columns: 80px 5fr;
+  // grid-template-columns: 1.1fr 5fr;
   grid-template-rows: 70px 13fr;
   justify-items: start;
   width: 100%;
@@ -73,7 +71,7 @@ p {
 .black-content {
   width: 100%;
   background-color: #2a3042;
-  padding: 0 !important;
+  // padding: 0 !important;
 }
 
 .white-content {
@@ -91,12 +89,10 @@ p {
   column-gap: 18px;
 }
 
-
 .title-box {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-
 
 .footer {
   padding: 20px 12px;

@@ -2,7 +2,6 @@
   width: 5px;
   padding: 0;
   display: none;
-
 }
 
 .black-content::-webkit-scrollbar-track {
@@ -22,11 +21,10 @@
 
 .black-content:hover::-webkit-scrollbar {
   display: block;
-
 }
 
 .black-content {
-  overflow: scroll;
+  // overflow: scroll;
   border: 1px solid #515e75;
   border-right: 0;
 
@@ -144,7 +142,7 @@
   text-align: center;
   font-size: 10px;
   top: 2px;
-
+  color: #fff;
 }
 
 .second-toggle-number {
