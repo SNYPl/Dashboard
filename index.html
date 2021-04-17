@@ -14,10 +14,12 @@
     />
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="scroll-hidden">
+  <body class="body scroll-hidden">
     <main class="main-items menu-change_big">
       <div class="black-navigation">
-        <span class="helper"><img src="img/logo-light.png" /></span>
+        <span class="helper"
+          ><img src="img/logo-light.png" class="small-menu-logo"
+        /></span>
       </div>
 
       <div class="white-navigation">
@@ -42,7 +44,10 @@
         <section class="user-menu">
           <img src="img/us.jpg" class="us-flag" />
           <button><i class="fab fa-intercom"></i></button>
-          <button><i class="fas fa-expand"></i></button>
+          <button class="button-fulscreen">
+            <i class="fas fa-expand open-fullscreen"></i>
+            <i class="fas fa-compress close-fullscreen delete-item"></i>
+          </button>
           <button>
             <i class="far fa-bell"><sup>3</sup></i>
           </button>
@@ -52,7 +57,7 @@
         </section>
       </div>
 
-      <div class="black-content toggler-padding">
+      <div class="black-content toggler-padding scrollY">
         <ul class="list-menu">
           <li class="menu-title">MENU</li>
           <li class="main-text-menu first-menu">

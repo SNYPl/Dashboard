@@ -2,6 +2,8 @@
   width: 50%;
   vertical-align: middle;
   padding: 4%;
+  transition: none;
+  cursor: pointer;
 }
 
 .helper {
@@ -9,4 +11,14 @@
   height: 100%;
   vertical-align: middle;
   padding: 3%;
+  width: 100%;
+  position: relative;
+  transition: none;
+}
+
+
+.toggler-menu-helper {
+  width: 300% !important;
+  left: 13px;
+  position: absolute;
 }

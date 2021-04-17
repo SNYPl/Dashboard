@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 0 12px;
   align-items: center;
+  z-index: 2;
 }
 
 .mega-menu {
@@ -156,4 +157,10 @@
     color: #555b6d;
     cursor: pointer;
   }
+}
+
+
+
+.button-fulscreen {
+  outline: none;
 }

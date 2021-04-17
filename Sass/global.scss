@@ -12,9 +12,15 @@ $base-color: #fff;
   display: none;
 }
 
-.restore-item {
-  display: block;
+.scrollY {
+  overflow-y: scroll;
 }
+
+.toggler-position {
+  position: sticky;
+  top: 0;
+}
+
 
 body,
 html {
@@ -65,7 +71,7 @@ p {
 }
 
 .menu-change_big {
-  grid-template-columns: 1.1fr 5fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .main-items {
@@ -84,6 +90,7 @@ p {
   text-align: center;
   vertical-align: middle;
   width: 100%;
+  transition: none;
 }
 
 .white-navigation {
