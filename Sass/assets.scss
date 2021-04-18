@@ -69,3 +69,32 @@
     opacity: 1;
   }
 }
+
+
+@keyframes apper {
+
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes close-animation {
+
+  100% {
+    transform: translate(0, -100px);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translate(0, 0);
+    opacity: 0;
+    display: none;
+  }
+}

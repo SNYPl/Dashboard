@@ -105,8 +105,6 @@ transactionList.insertAdjacentHTML("beforeend", list);
 
 
 
-menuToggler.addEventListener("click", menuToggle);
-
 let mainContent = document.querySelector(".main-items");
 
 function menuToggle() {
@@ -120,6 +118,10 @@ function menuToggle() {
   document.querySelector(".black-content").classList.toggle("scrollY");
   document.querySelector(".small-menu-logo").classList.toggle("toggler-menu-helper");
 }
+
+menuToggler.addEventListener("click", menuToggle);
+
+
 
 
 let elem = document.querySelector(".body");
@@ -152,6 +154,34 @@ document.addEventListener("fullscreenchange", function (e) {
     changeFullscreenLogo();
   } else {
     changeFullscreenLogo();
+  }
+
+});
+
+
+function popupShowed() {
+  document.querySelector(".main-popup").classList.remove("delete-item")
+}
+
+setTimeout(popupShowed, 800);
+
+
+
+function closePopup() {
+  document.querySelector(".main-popup").style.display = "none"
+}
+
+function popupClosed() {
+  document.querySelector(".popup").style.transform = "translate(0,-100px)";
+
+  setTimeout(closePopup, 300);
+}
+
+document.querySelector(".popup-btn_close").addEventListener("click", popupClosed);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    popupClosed();
   }
 
 });

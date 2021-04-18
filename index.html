@@ -15,6 +15,28 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body class="body scroll-hidden">
+    <section class="main-popup delete-item">
+      <div class="main-popup_overlay">
+        <div class="popup">
+          <div class="popup-header">
+            <button type="button" class="popup-btn_close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="popup-subscribe">
+            <div class="popup-logo">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h4>Subscribe !</h4>
+            <p>Subscribe our newletter and get notification to stay update.</p>
+          </div>
+          <div class="subcribe-send_email">
+            <input type="email" placeholder="Enter Email Address" />
+            <div><i class="far fa-paper-plane"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
     <main class="main-items menu-change_big">
       <div class="black-navigation">
         <span class="helper"
@@ -42,6 +64,12 @@
         </section>
 
         <section class="user-menu">
+          <div class="user-menu_darkmode">
+            <label for="change-mode">
+              <input type="checkbox" id="change-mode" class="menu-darkmode" />
+              Dark Mode
+            </label>
+          </div>
           <img src="img/us.jpg" class="us-flag" />
           <button><i class="fab fa-intercom"></i></button>
           <button class="button-fulscreen">

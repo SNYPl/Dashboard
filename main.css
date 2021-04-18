@@ -33,6 +33,7 @@ body {
   line-height: 1.5;
   color: #495057;
   font-size: 13px;
+  position: relative;
 }
 
 * {
@@ -144,11 +145,12 @@ p {
   width: 100%;
   position: relative;
   transition: none;
+  padding: 10px;
 }
 
 .toggler-menu-helper {
-  width: 300% !important;
-  left: 13px;
+  width: 250% !important;
+  left: 20px;
   position: absolute;
 }
 
@@ -201,6 +203,27 @@ p {
   50% {
     transform: translate(10px, 0);
     opacity: 1;
+  }
+}
+@keyframes apper {
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes close-animation {
+  100% {
+    transform: translate(0, -100px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 0;
+    display: none;
   }
 }
 .white-navigation {
@@ -279,6 +302,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
 }
 .user-menu img {
   width: 40px;
@@ -318,6 +342,9 @@ p {
 .user-menu .fa-sun {
   animation: rotate-90-cw 0.5s infinite;
 }
+.user-menu button:last-child {
+  cursor: default;
+}
 .user-menu button {
   height: 100%;
   width: 45px;
@@ -326,6 +353,7 @@ p {
   border: none;
   background-color: #fff;
   cursor: pointer;
+  outline: none;
 }
 .user-menu button i {
   font-size: 20px;
@@ -335,7 +363,6 @@ p {
   margin: 0 3px;
   display: block;
   text-align: center;
-  padding-top: 10px;
   font-size: 13px;
   color: #555b6d;
   cursor: pointer;
@@ -343,6 +370,16 @@ p {
 
 .button-fulscreen {
   outline: none;
+}
+
+.user-menu_darkmode {
+  margin-right: 5px;
+}
+.user-menu_darkmode label {
+  display: flex;
+}
+.user-menu_darkmode label input {
+  margin-right: 10px;
 }
 
 .black-content::-webkit-scrollbar {
@@ -907,6 +944,27 @@ p {
     opacity: 1;
   }
 }
+@keyframes apper {
+  0% {
+    transform: translate(0, -100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes close-animation {
+  100% {
+    transform: translate(0, -100px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 0;
+    display: none;
+  }
+}
 .activity-info {
   display: flex;
   flex-direction: row;
@@ -1175,6 +1233,134 @@ main .toggler-padding {
 }
 .menu-toggler-logo:hover i {
   color: #fff;
+}
+
+.main-popup {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  background-color: rgba(73, 80, 87, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+
+.main-popup_overlay {
+  position: relative;
+  max-width: 500px;
+  margin: 28px auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #f6f6f6;
+  border-radius: 0.4rem;
+  outline: 0;
+  padding: 16px;
+  animation: 0.5s linear apper;
+}
+
+.popup-header {
+  padding: 0 6px 16px 16px;
+  text-align: right;
+}
+.popup-header .popup-btn_close {
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.popup-header .popup-btn_close i {
+  font-size: 20px;
+  color: #000;
+  opacity: 0.8;
+}
+
+.popup-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+.popup-subscribe .popup-logo {
+  width: 72px;
+  height: 72px;
+  background-color: #eff2f7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.popup-subscribe .popup-logo i {
+  color: #556ee6;
+  font-size: 30px;
+}
+.popup-subscribe h4 {
+  color: #556ee6;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.popup-subscribe p {
+  margin-bottom: 6px;
+  padding: 0 9%;
+  text-align: center;
+}
+
+.subcribe-send_email {
+  padding: 16px 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subcribe-send_email input {
+  display: block;
+  width: 90%;
+  padding: 7px 12px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #eff2f7;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.25rem;
+  outline: none;
+}
+.subcribe-send_email div {
+  padding: 0;
+  height: 35px;
+  width: 39px;
+  color: #fff;
+  background-color: #556ee6;
+  border-color: #556ee6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subcribe-send_email div i {
+  font-size: 14px;
+}
+.subcribe-send_email div:hover {
+  background-color: #1435d6;
+}
+
+.close-popup_animation {
+  animation: 2s linear close-animation;
 }
 
 /*# sourceMappingURL=main.css.map */

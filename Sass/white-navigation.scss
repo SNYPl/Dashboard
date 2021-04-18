@@ -88,6 +88,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  align-items: center;
 
   img {
     width: 40px;
@@ -133,6 +134,10 @@
     animation: rotate-90-cw 0.5s infinite;
   }
 
+  button:last-child {
+    cursor: default;
+  }
+
   button {
     height: 100%;
     width: 45px;
@@ -141,6 +146,7 @@
     border: none;
     background-color: #fff;
     cursor: pointer;
+    outline: none;
 
     i {
       font-size: 20px;
@@ -152,7 +158,6 @@
     margin: 0 3px;
     display: block;
     text-align: center;
-    padding-top: 10px;
     font-size: 13px;
     color: #555b6d;
     cursor: pointer;
@@ -163,4 +168,18 @@
 
 .button-fulscreen {
   outline: none;
+}
+
+
+.user-menu_darkmode {
+  margin-right: 5px;
+
+
+  label {
+    display: flex;
+
+    input {
+      margin-right: 10px;
+    }
+  }
 }
