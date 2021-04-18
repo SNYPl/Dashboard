@@ -137,31 +137,21 @@ function changeFullScreen() {
       .then(() => console.log("Document Exited from Full screen mode"))
       .catch((err) => console.error(err))
 
-
   } else {
     document.documentElement.requestFullscreen();
-
   }
-
-  changeFullscreenLogo();
 }
 
 fullscreen.addEventListener("click", changeFullScreen);
 
 
 
+document.addEventListener("fullscreenchange", function (e) {
 
-
-document.addEventListener("keydown", function (e) {
-
-  // if (fullscreenElement != null) {
-
-  if (e.key === "Escape") {
+  if (document.fullscreenElement) {
     changeFullscreenLogo();
-    console.log("aris");
-    console.log(window.innerHeight);
+  } else {
+    changeFullscreenLogo();
   }
-  // }
-});
 
-console.log(document);
+});
