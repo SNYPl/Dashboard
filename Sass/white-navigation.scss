@@ -12,6 +12,8 @@
 .mega-menu {
   display: flex;
   padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
 
   .wnavigation-scroll {
     button {
@@ -19,7 +21,6 @@
       margin-right: 25px;
       background-color: #fff;
       cursor: pointer;
-      margin-top: 8px;
       outline: none;
     }
 
@@ -64,6 +65,7 @@
         font-size: 15px;
         font-weight: 500;
         color: #495057;
+        padding-left: 15px;
       }
     }
   }
@@ -72,7 +74,6 @@
     text-decoration: none;
     font-weight: 400;
     font-size: 13px;
-    margin-top: 8px;
     color: #555b6d;
     display: block;
 
@@ -168,18 +169,4 @@
 
 .button-fulscreen {
   outline: none;
-}
-
-
-.user-menu_darkmode {
-  margin-right: 5px;
-
-
-  label {
-    display: flex;
-
-    input {
-      margin-right: 10px;
-    }
-  }
 }

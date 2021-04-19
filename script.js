@@ -117,6 +117,7 @@ function menuToggle() {
   document.querySelector(".white-navigation").classList.toggle("toggler-position");
   document.querySelector(".black-content").classList.toggle("scrollY");
   document.querySelector(".small-menu-logo").classList.toggle("toggler-menu-helper");
+  document.querySelector(".white-content").classList.toggle("scroll-hidden");
 }
 
 menuToggler.addEventListener("click", menuToggle);
@@ -183,5 +184,19 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
     popupClosed();
   }
+
+});
+
+
+let darkModeItems = document.querySelectorAll(".dark-mode-item");
+
+document.querySelector(".switch-input").addEventListener('change', function () {
+  document.querySelector(".body").classList.toggle("dark-mode_body");
+
+  darkModeItems.forEach(ev => {
+    ev.classList.toggle("dark-mode_items");
+  });
+  document.querySelector(".white-navigation").classList.toggle("navigation-dark-mode");
+  document.querySelector(".graphics").classList.toggle("graphic-dark-mode");
 
 });
