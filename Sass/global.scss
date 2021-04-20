@@ -13,7 +13,7 @@ $dark-mode-color:#2a3042;
 }
 
 .delete-item {
-  display: none;
+  display: none !important;
 }
 
 .scrollY {
@@ -70,6 +70,10 @@ i {
 
 p {
   color: #74788d;
+}
+
+li {
+  list-style: none;
 }
 
 .menu-change_small {

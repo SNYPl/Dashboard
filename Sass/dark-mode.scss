@@ -217,3 +217,49 @@
     }
 
 }
+
+
+.dark-mode_items {
+
+    h6 {
+        color: rgb(246, 246, 246);
+    }
+
+    .packet_list {
+
+        img {
+            background-color: #2a3042 !important
+        }
+
+        span {
+            color: rgb(195, 203, 228) !important;
+        }
+    }
+
+
+    .notifications-name {
+
+
+        a {
+            color: rgb(85, 110, 230);
+        }
+    }
+
+    .notification-link {
+        color: rgb(85, 110, 230) !important;
+    }
+
+    .profile-dropdown-item {
+
+        i {
+            background-color: #2a3042 !important;
+            color: #a6b0cf !important;
+        }
+    }
+
+    .dopdown-logout {
+
+        border-top: 1px solid rgb(50, 57, 78) !important;
+    }
+
+}

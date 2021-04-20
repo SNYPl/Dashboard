@@ -189,6 +189,7 @@ document.addEventListener("keydown", function (e) {
 
 
 let darkModeItems = document.querySelectorAll(".dark-mode-item");
+let dropdownProfileMenu = document.querySelectorAll(".menu-click-dropdown");
 
 document.querySelector(".switch-input").addEventListener('change', function () {
   document.querySelector(".body").classList.toggle("dark-mode_body");
@@ -199,4 +200,37 @@ document.querySelector(".switch-input").addEventListener('change', function () {
   document.querySelector(".white-navigation").classList.toggle("navigation-dark-mode");
   document.querySelector(".graphics").classList.toggle("graphic-dark-mode");
 
+
+
+  dropdownProfileMenu.forEach(ev => {
+    ev.classList.toggle("dark-mode_items");
+  });
+
+
 });
+
+
+
+let clickMenu = document.querySelectorAll(".click-menu");
+
+let dropMenu = function () {
+
+  for (let i = 0; i < clickMenu.length; i++) {
+
+    clickMenu[i].addEventListener("click", function (e) {
+
+      for (let j = 0; j < clickMenu.length; j++) {
+        if (i != j) {
+          dropdownProfileMenu[j].classList.add("delete-item");
+        } else {
+          dropdownProfileMenu[i].classList.toggle("delete-item");
+          e.preventDefault();
+        }
+      }
+
+    });
+  }
+
+}
+
+dropMenu();
