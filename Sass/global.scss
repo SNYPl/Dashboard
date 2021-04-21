@@ -77,7 +77,7 @@ li {
 }
 
 .menu-change_small {
-  grid-template-columns: 80px 5fr;
+  grid-template-columns: 80px 5fr !important;
 }
 
 .menu-change_big {
@@ -86,8 +86,6 @@ li {
 
 .main-items {
   display: grid;
-  // grid-template-columns: 80px 5fr;
-  // grid-template-columns: 1.1fr 5fr;
   grid-template-rows: 70px 13fr;
   justify-items: start;
   width: 100%;
@@ -101,6 +99,7 @@ li {
   vertical-align: middle;
   width: 100%;
   transition: none;
+  position: relative;
 }
 
 .white-navigation {

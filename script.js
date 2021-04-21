@@ -116,8 +116,10 @@ function menuToggle() {
   document.querySelector(".white-content").classList.toggle("scroll-auto");
   document.querySelector(".white-navigation").classList.toggle("toggler-position");
   document.querySelector(".black-content").classList.toggle("scrollY");
-  document.querySelector(".small-menu-logo").classList.toggle("toggler-menu-helper");
+  document.querySelector(".helper").classList.toggle("delete-item");
   document.querySelector(".white-content").classList.toggle("scroll-hidden");
+  document.querySelector(".small-new-logo").classList.toggle("delete-item");
+
 }
 
 menuToggler.addEventListener("click", menuToggle);
