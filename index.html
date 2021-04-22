@@ -47,10 +47,12 @@
 
       <div class="white-navigation">
         <section class="mega-menu">
-          <div class="wnavigation-scroll">
+          <div class="wnavigation-scroll old-scroll">
             <button><i class="fa fa-fw fa-bars"></i></button>
           </div>
-
+          <div class="wnavigation-scroll new-scroll">
+            <button><i class="fa fa-fw fa-bars"></i></button>
+          </div>
           <form class="wnavigation-search">
             <div class="search-block">
               <i class="fab fa-searchengin"> </i>
@@ -66,16 +68,14 @@
 
         <section class="user-menu">
           <div class="user-menu_darkmode">
-            <!-- <label for="change-mode"> -->
-            Dark Mode
+            <span> Dark Mode</span>
+
             <form action="#">
               <div class="switch">
                 <input id="switch-1" type="checkbox" class="switch-input" />
                 <label for="switch-1" class="switch-label">Switch</label>
               </div>
             </form>
-
-            <!-- </label> -->
           </div>
           <div class="menu-flag click-menu">
             <img src="img/us.jpg" class="us-flag" />
@@ -227,7 +227,7 @@
         </section>
       </div>
 
-      <div class="black-content toggler-padding scrollY">
+      <div class="black-content toggler-padding scrollY hidden-media">
         <ul class="list-menu">
           <li class="menu-title">MENU</li>
           <li class="main-text-menu first-menu">
@@ -932,20 +932,22 @@
 
         <section class="transactions dark-mode-item mediafor">
           <h4>Latest Transaction</h4>
-          <article class="transctions-list">
-            <div class="list-header">
-              <div class="list-checkbox">
-                <input type="checkbox" />
+          <div class="transactions-container">
+            <article class="transctions-list">
+              <div class="list-header">
+                <div class="list-checkbox">
+                  <input type="checkbox" />
+                </div>
+                <div>Order ID</div>
+                <div>Billing Name</div>
+                <div>Date</div>
+                <div>Total</div>
+                <div>Payment Status</div>
+                <div>Patment Method</div>
+                <div>View Details</div>
               </div>
-              <div>Order ID</div>
-              <div>Billing Name</div>
-              <div>Date</div>
-              <div>Total</div>
-              <div>Payment Status</div>
-              <div>Patment Method</div>
-              <div>View Details</div>
-            </div>
-          </article>
+            </article>
+          </div>
         </section>
         <footer class="footer dark-mode-item mediafor">
           <div class="year">2021 ©</div>

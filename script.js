@@ -4,7 +4,7 @@ let mainText = document.querySelectorAll(".main-text-menu");
 
 let transactionList = document.querySelector(".transactions");
 
-let menuToggler = document.querySelector(".wnavigation-scroll");
+let menuToggler = document.querySelector(".old-scroll");
 
 let showMenu = function () {
   for (let i = 0; i < mainText.length; i++) {
@@ -101,7 +101,8 @@ let list = data.map((item) => {
 </div>`;
 }).join("");
 
-transactionList.insertAdjacentHTML("beforeend", list);
+
+document.querySelector(".transactions-container").insertAdjacentHTML("beforeend", list);
 
 
 
@@ -236,3 +237,10 @@ let dropMenu = function () {
 }
 
 dropMenu();
+
+
+document.querySelector(".new-scroll").addEventListener("click", function () {
+
+  document.querySelector(".black-content").classList.toggle("hidden-media");
+
+});
