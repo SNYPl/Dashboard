@@ -1953,7 +1953,7 @@ main .toggler-padding {
     display: block;
   }
 
-  .menu-profile span {
+  .profile-name {
     display: none;
   }
 
@@ -2105,6 +2105,10 @@ main .toggler-padding {
   }
 
   .view {
+    white-space: nowrap;
+  }
+
+  .city-firstline {
     white-space: nowrap;
   }
 }

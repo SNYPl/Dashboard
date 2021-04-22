@@ -239,7 +239,9 @@ let dropMenu = function () {
 dropMenu();
 
 
-document.querySelector(".new-scroll").addEventListener("click", function () {
+let newScrollClick = document.querySelector(".new-scroll");
+
+newScrollClick.addEventListener("click", function () {
 
   document.querySelector(".black-content").classList.toggle("hidden-media");
 
