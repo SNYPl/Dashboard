@@ -1954,7 +1954,7 @@ main .toggler-padding {
   }
 
   .profile-name {
-    display: none;
+    display: none !important;
   }
 
   .button-fulscreen {
@@ -2110,6 +2110,10 @@ main .toggler-padding {
 
   .city-firstline {
     white-space: nowrap;
+  }
+
+  .menu-profile-dropdown {
+    right: 0;
   }
 }
 @media only screen and (max-width: 315px) {

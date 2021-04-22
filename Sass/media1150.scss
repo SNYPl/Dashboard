@@ -224,7 +224,7 @@
     }
 
     .profile-name {
-        display: none;
+        display: none !important;
     }
 
     .button-fulscreen {
@@ -400,6 +400,10 @@
 
     .city-firstline {
         white-space: nowrap;
+    }
+
+    .menu-profile-dropdown {
+        right: 0;
     }
 }
 
